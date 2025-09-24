@@ -32,12 +32,17 @@ const schema = defineSchema(
       role: v.optional(roleValidator), // role of the user. do not remove
     }).index("email", ["email"]), // index for the email. do not remove or modify
 
-    // add other tables here
-
-    // tableName: defineTable({
-    //   ...
-    //   // table fields
-    // }).index("by_field", ["field"])
+    // trips table for logging travel data
+    trips: defineTable({
+      userId: v.id("users"),
+      origin: v.string(),
+      destination: v.string(),
+      transportMode: v.string(),
+      date: v.string(),
+      time: v.string(),
+      coTravelers: v.number(),
+      notes: v.optional(v.string()),
+    }).index("by_user_id", ["userId"]),
   },
   {
     schemaValidation: false,
