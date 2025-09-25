@@ -25,10 +25,10 @@ export default function Chatbot() {
             className="text-center mb-12"
           >
             <h1 className="text-5xl font-bold text-white mb-4">
-              WhatsApp Chatbot
+              Telegram Chatbot
             </h1>
             <p className="text-xl text-white/80">
-              Log your trips on the go with our intelligent WhatsApp integration
+              Log your trips on the go with our Telegram bot
             </p>
           </motion.div>
 
@@ -52,8 +52,8 @@ export default function Chatbot() {
                       1
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold mb-2">Add Our Number</h3>
-                      <p className="text-white/80">Save our WhatsApp number to your contacts</p>
+                      <h3 className="text-white font-semibold mb-2">Find Our Bot</h3>
+                      <p className="text-white/80">Open Telegram and search for our bot name</p>
                     </div>
                   </div>
                   
@@ -63,7 +63,7 @@ export default function Chatbot() {
                     </div>
                     <div>
                       <h3 className="text-white font-semibold mb-2">Send Trip Details</h3>
-                      <p className="text-white/80">Message us with your trip information in natural language</p>
+                      <p className="text-white/80">Message us your trip in natural language or in key:value format</p>
                     </div>
                   </div>
                   
@@ -73,7 +73,7 @@ export default function Chatbot() {
                     </div>
                     <div>
                       <h3 className="text-white font-semibold mb-2">Automatic Logging</h3>
-                      <p className="text-white/80">Our AI processes and logs your trip automatically</p>
+                      <p className="text-white/80">We parse and log your trip instantly</p>
                     </div>
                   </div>
                 </CardContent>
@@ -97,18 +97,18 @@ export default function Chatbot() {
                   <div className="text-center">
                     <div className="bg-white/10 rounded-lg p-6 mb-6">
                       <QrCode className="h-24 w-24 text-white mx-auto mb-4" />
-                      <p className="text-white/80 text-sm">Scan QR code to add our WhatsApp</p>
+                      <p className="text-white/80 text-sm">Open Telegram and search for our bot</p>
                     </div>
                     
                     <div className="space-y-4">
                       <div>
-                        <p className="text-white/80 mb-2">WhatsApp Number:</p>
-                        <p className="text-2xl font-bold text-white">+1 (555) 123-TRIP</p>
+                        <p className="text-white/80 mb-2">Bot Handle:</p>
+                        <p className="text-2xl font-bold text-white">@your_bot_username</p>
                       </div>
                       
                       <Button
-                        onClick={() => window.open("https://wa.me/15551234567", "_blank")}
-                        className="w-full bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white border-0 py-3 text-lg font-semibold"
+                        onClick={() => window.open("https://t.me/your_bot_username", "_blank")}
+                        className="w-full bg-gradient-to-r from-green-500 to-teal-501 hover:from-green-600 hover:to-teal-600 text-white border-0 py-3 text-lg font-semibold"
                       >
                         Start Chatting
                       </Button>

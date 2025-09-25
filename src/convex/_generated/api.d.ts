@@ -16,6 +16,7 @@ import type {
 import type * as auth_emailOtp from "../auth/emailOtp.js";
 import type * as auth from "../auth.js";
 import type * as http from "../http.js";
+import type * as telegram from "../telegram.js";
 import type * as trips from "../trips.js";
 import type * as users from "../users.js";
 import type * as whatsapp from "../whatsapp.js";
@@ -32,6 +33,7 @@ declare const fullApi: ApiFromModules<{
   "auth/emailOtp": typeof auth_emailOtp;
   auth: typeof auth;
   http: typeof http;
+  telegram: typeof telegram;
   trips: typeof trips;
   users: typeof users;
   whatsapp: typeof whatsapp;
