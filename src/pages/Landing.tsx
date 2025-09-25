@@ -17,6 +17,7 @@ import {
   Users,
 } from "lucide-react";
 import { useNavigate } from "react-router";
+import { Badge } from "@/components/ui/badge";
 
 export default function Landing() {
   const { isAuthenticated } = useAuth();
@@ -35,8 +36,8 @@ export default function Landing() {
     },
     {
       icon: <Bot className="h-8 w-8 text-green-400" />,
-      title: "WhatsApp Integration",
-      description: "Log trips directly through our WhatsApp chatbot for ultimate convenience.",
+      title: "Telegram Chatbot",
+      description: "Log trips directly through our Telegram bot for ultimate convenience.",
     },
     {
       icon: <Leaf className="h-8 w-8 text-teal-400" />,
@@ -118,6 +119,17 @@ export default function Landing() {
                 <div className="text-white">{mode.icon}</div>
               </motion.div>
             ))}
+          </motion.div>
+
+          {/* Summary Badges */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="flex flex-wrap items-center justify-center gap-3"
+          >
+            <Badge className="bg-white/10 text-white border border-white/20">Total Distance: 0 km</Badge>
+            <Badge className="bg-white/10 text-white border border-white/20">Countries Visited: 0</Badge>
           </motion.div>
         </div>
       </section>
@@ -289,10 +301,10 @@ export default function Landing() {
               <CardContent className="p-12">
                 <MessageCircle className="h-16 w-16 text-green-400 mx-auto mb-6" />
                 <h2 className="text-4xl font-bold text-white mb-4">
-                  WhatsApp Integration
+                  Telegram Chatbot
                 </h2>
                 <p className="text-xl text-white/80 mb-8">
-                  Log your trips on the go with our WhatsApp chatbot. Simply send a message and we'll handle the rest.
+                  Log your trips on the go with our Telegram chatbot. Simply send a message and we'll handle the rest.
                 </p>
                 <Button
                   onClick={() => navigate("/chatbot")}

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { BarChart3, Calendar, Car, MapPin, TrendingUp, Users } from "lucide-react";
 import { Navigate } from "react-router";
 import { useQuery } from "convex/react";
+import { Badge } from "@/components/ui/badge";
 
 export default function Dashboard() {
   const { isLoading, isAuthenticated } = useAuth();
@@ -49,6 +50,10 @@ export default function Dashboard() {
             <p className="text-xl text-white/80">
               Insights and analytics from your travel data
             </p>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+              <Badge className="bg-white/10 text-white border border-white/20">Total Distance: 0 km</Badge>
+              <Badge className="bg-white/10 text-white border border-white/20">Countries Visited: 0</Badge>
+            </div>
           </motion.div>
 
           {/* Stats Cards */}
