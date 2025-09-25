@@ -97,17 +97,22 @@ export default function Chatbot() {
                   <div className="text-center">
                     <div className="bg-white/10 rounded-lg p-6 mb-6">
                       <QrCode className="h-24 w-24 text-white mx-auto mb-4" />
-                      <p className="text-white/80 text-sm">Open Telegram and search for our bot</p>
+                      <img
+                        src="https://harmless-tapir-303.convex.cloud/api/storage/ff300ec6-5a1b-431b-a457-32cfdf8e68f3"
+                        alt="Telegram bot QR - smart_travel_logger_bot"
+                        className="mx-auto mb-4 rounded-lg w-40 h-40 object-contain border border-white/20"
+                      />
+                      <p className="text-white/80 text-sm">Scan the QR or tap below to start</p>
                     </div>
                     
                     <div className="space-y-4">
                       <div>
                         <p className="text-white/80 mb-2">Bot Handle:</p>
-                        <p className="text-2xl font-bold text-white">@your_bot_username</p>
+                        <p className="text-2xl font-bold text-white">@smart_travel_logger_bot</p>
                       </div>
                       
                       <Button
-                        onClick={() => window.open("https://t.me/your_bot_username", "_blank")}
+                        onClick={() => window.open("https://t.me/smart_travel_logger_bot", "_blank")}
                         className="w-full bg-gradient-to-r from-green-500 to-teal-501 hover:from-green-600 hover:to-teal-600 text-white border-0 py-3 text-lg font-semibold"
                       >
                         Start Chatting
